@@ -54,9 +54,8 @@ while ( yn === "y"){
     yn = prompt("Do you want to continue ordering? y/n")
 }
 
-//DELETE ||
-order = [["cola", 400], ["beef burger", 1300]];
-
 let receipt = order.map((name) => `${name[0]} --- ${name[1]}`)
 
 let expensive = order.filter((name) => name[1] === 1300)
+
+export {receipt, shopName, cnt}
